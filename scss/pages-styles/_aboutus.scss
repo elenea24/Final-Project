@@ -1,0 +1,236 @@
+body {
+    @extend %my-container;
+
+    @media(max-width:$desktop-version){
+        width: 1024px;
+    }
+
+    @media(max-width:$tablet-version){
+        width: 768px;
+    }
+    
+    .index-header {
+        @include goFlex(row, space-between, center);
+        padding: 20px 50px;
+
+        @media(max-width:$desktop-version){
+            width: 925px;
+        }
+
+        @media (max-width:$tablet-version){
+            width: 669px;
+        }
+
+        @media(max-width:$mobile-version){
+            margin-left: -160px;
+            width: 540px;
+        }
+  
+       
+        .tbs-logo{
+            width: 100px;
+            margin-right: 500px;
+            margin-left: -700px; 
+            margin-top: -20px;
+
+            @media(max-width:$desktop-version){
+                margin-left: 240px;
+            }
+
+            @media (max-width:$tablet-version){
+                width: 80px;
+                margin-left: 110px;
+            }
+          }
+
+
+        ul {
+            width: 650px;
+            @include goFlex(row, space-evenly, );
+            padding: 5px 0;
+            padding: 0 0 0 750px;
+
+            @media(max-width:$desktop-version){
+                padding: 0 0 0 200px;
+                width: 600px;
+
+            }
+
+            @media (max-width:$tablet-version){
+                padding: 0 0 0 200px;
+                width: 350px;
+                
+            }
+
+        a{
+          font-weight: 400;
+          font-size: $secondaryfontsize;
+          color: gray;
+
+        }
+
+        .main-color{
+            color: purple;
+          }
+    
+        }
+    
+    }
+
+    main{
+    
+        .background{
+            background-image: url(../images/main-image1.png);
+            margin-top: 10px;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 1400px;
+            position: relative;
+            margin-top: -2px;
+
+            @media(max-width:$mobile-version){
+                width: 480px;
+            }
+        }
+
+        h6{
+            color: plum;
+            font-size: 30px;
+            position: absolute;
+            margin-top: -1250px;
+            margin-left: 100px;
+            font-weight: 800;
+        }
+
+        
+          
+            
+
+        .paragraph {
+            font-size: 17px;
+            color: $secondarycolor;
+            position: absolute;
+            margin-top: -1100px;
+            width: 500px;
+            margin-left: 100px;    
+
+            @media(max-width:$mobile-version){
+                width: 400px;
+                margin-left: -5px;
+                margin-left: 50px;
+             }
+        }
+
+        .paragraph1{
+            font-size:17px;
+            color: $secondarycolor;
+            position: absolute;
+            margin-top: -950px;
+            width: 500px;
+            margin-left: 100px;
+
+            @media(max-width:$mobile-version){
+                width: 300px;
+                margin-left: -5px;
+                margin-left: 50px;
+             }
+        }
+
+        .paragraph2{
+            font-size:17px;
+            color: $secondarycolor;
+            position: absolute;
+            margin-top: -780px;
+            width: 500px;
+            margin-left: 100px;
+
+            @media(max-width:$mobile-version){
+                width: 300px;
+                margin-top: -700px;
+                margin-left: -5px;
+                margin-left: 50px;
+             }
+        }
+    
+      
+        
+}
+
+   .footer1{
+     margin-top: -1500px;
+
+
+    .aboutusfooter{
+        height: 400px;
+        width: 1500px;
+        background-color: black;
+        position: relative;
+        margin-top: 1400px;
+
+        
+        @media(max-width:$desktop-version){
+          width: 1024px;
+        }
+
+        @media (max-width:$tablet-version){
+            width: 768px;
+            
+          }
+
+          @media(max-width:$mobile-version){
+            width: 480px;
+          }
+      
+
+        .header-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            font-size: 30px;
+            padding-top: 50px;
+            color: lightblue;
+            font-weight: 700;
+            
+
+        }
+        
+    
+
+    .item-wrapper{
+        padding-top: 60px;
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+           
+        @media (max-width:$mobile-version){
+            width: 400px;
+          
+        }
+
+    
+    
+
+    .items{
+        display: flex;
+        flex-direction: column;
+        height: 140px;
+        flex-wrap: wrap;
+        width: 200px;
+        margin-left: 80px;
+       
+     
+
+    .itemholders{
+        padding: 5px 0;
+        color: blueviolet;
+        
+    }
+    }
+}
+    }
+
+
+   }
+}

@@ -1,0 +1,228 @@
+body {
+    height: 1300px;
+    
+  @media(max-width:$desktop-version){
+    width: 1024px;
+}
+
+  @media(max-width:$tablet-version){
+    width: 768px;
+}
+    
+  @media(max-width:$mobile-version){
+    width: 480px;
+  }
+
+    
+    .index-header {
+        @include goFlex(row, space-between, center);
+        padding: 20px 50px;
+        
+
+        .tbs-logo{
+            width: 100px;
+            margin-right: 500px;
+            margin-left: -700px; 
+            margin-top: -20px;
+          }
+
+        ul {
+            width: 650px;
+            @include goFlex(row, space-evenly, );
+            padding: 5px 0;
+            padding: 0 0 0 750px;
+
+
+        a{
+          font-weight: 400;
+          font-size: $secondaryfontsize;
+          color: gray;
+
+        }
+        .main-color{
+            color: purple;
+          }
+    
+        }
+    
+    }
+
+    main{
+    
+        .background3{
+            background-image: url(../images/main-image1.png);
+            margin-top: 10px;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 1000px;
+            position: relative;
+            width: 1500px;
+            margin-top: -2px;
+
+            @media(max-width:$desktop-version){
+                width: 1024px;
+            }
+
+            @media(max-width:$mobile-version){
+                width: 480px;
+            }
+        
+        
+        .contact-h1{
+            color: $secondarycolor;
+            font-size: 30px;
+            position: absolute;
+            margin-left: 100px;
+            font-weight: 800;
+            letter-spacing: 10px;
+            margin-top: 60px;
+            color: plum;
+
+            @media(max-width:$desktop-version){
+                margin-left: 270px;
+            }
+
+            @media(max-width:$tablet-version){
+                margin-left: 10px;
+                padding-left: 110px;
+            }
+
+            @media(max-width:$mobile-version){
+                margin-left: -50px;
+                font-size: 20px;
+            }
+        }
+        }
+
+      
+.textarea{
+    height: 290px;
+    width: 500px;
+    background-color: inherit ;
+
+    @media(max-width:$mobile-version){
+        width: 370px;
+    }
+}
+
+.left-side{
+    display: flex;
+    margin-left: 100px ;
+    margin-top: -750px;
+    position: absolute;
+
+    @media(max-width:$desktop-version){
+        display: block;
+        margin-left: 250px;
+    }
+
+    @media(max-width:$tablet-version){
+        display: block;
+        margin-left: 10px;
+        padding-left: 100px;
+    }
+
+    @media(max-width:$mobile-version){
+        margin-left: -50px;
+    }
+
+    ::-webkit-input-placeholder{
+        color: $secondarycolor;
+    }
+}
+
+.right-side{
+    margin-left: 30px;
+}
+
+.input{
+    width: 370px;
+    height: 60px;
+    background-color: inherit;
+}
+
+.input1{
+    background-color: plum ;
+    width: 380px;
+    height: 59px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @media(max-width:$desktop-version){
+        gap: 10px;
+       margin-top: 20px;
+       margin-left: 50px;
+    }
+
+    @media(max-width:$tablet-version){
+       gap: 10px;
+       margin-top: 20px;
+       margin-left: 50px;
+    }
+
+    @media(max-width:$mobile-version){
+        margin-left: revert-layer;
+    }
+}
+    
+ }
+
+    footer{
+        margin-top: -1500px;
+        
+       .aboutusfooter{
+           height: 400px;
+           width: 1500px;
+           background-color: black;
+           position: relative;
+           margin-top: 1400px;
+   
+           .header-wrapper{
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               width: 100%;
+               font-size: 30px;
+               padding-top: 50px;
+               color: lightblue;
+               font-weight: 700;
+               
+   
+           }
+           
+       
+   
+       .item-wrapper{
+           padding-top: 60px;
+           padding-bottom: 20px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       
+       
+   
+       .items{
+           display: flex;
+           flex-direction: column;
+           height: 140px;
+           flex-wrap: wrap;
+           width: 200px;
+           margin-left: 80px;
+           
+   
+       .itemholders{
+           padding: 5px 0;
+           color: blueviolet;
+           
+       }
+       }
+   }
+       }
+   
+   
+      }
+}
